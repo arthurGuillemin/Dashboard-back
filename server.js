@@ -17,12 +17,11 @@ app.use(cors());
 import userRoutes from "./Routes/UserRoutes.js";
 import BookRoutes from "./Routes/BookRoutes.js";
 import courseRoutes from "./Routes/CoursesRoutes.js";
-
-
+import EventRoutes from './Routes/EnventRoutes.js' 
 app.use('/users', userRoutes);
 app.use('/books', BookRoutes);
 app.use('/courses', courseRoutes);
-
+app.use('/events', EventRoutes);
 
 
 
